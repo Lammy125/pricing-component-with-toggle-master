@@ -36,6 +36,11 @@ body {
   background-position: top right, bottom left;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 h2 {
   text-align: center;
   color: hsl(233, 13%, 49%);
@@ -244,4 +249,32 @@ span {
   color: #ffffff;
   cursor: pointer;
   border: 1px solid hsl(234, 14%, 74%);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    height: 100%;
+    padding: 3rem 0;
+  }
+
+  .cardCon {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .cardOne {
+    border-radius: 7px;
+  }
+  .cardTwo {
+    border-radius: 7px;
+  }
+  .cardThree {
+    border-radius: 7px;
+  }
+  .btnOne {
+    height: 45px;
+  }
+  .btnTwo {
+    height: 45px;
+  }
 }
