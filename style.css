@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+}
+
+h2 {
+  text-align: center;
+  color: hsl(233, 13%, 49%);
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 3rem 0;
+  gap: 1.5rem;
+}
+
+.period p {
+  color: hsl(234, 14%, 74%);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.toggle-container {
+  display: inline-block;
+  position: relative;
+}
+
+.toggle-container :hover {
+  cursor: pointer;
+}
+
+/* Hide the default checkbox input */
+.toggle-container input[type="checkbox"] {
+  display: none;
+}
+
+/* Style for the toggle track */
+.toggle-track {
+  width: 40px;
+  height: 22px;
+  background-color: hsl(237, 63%, 64%);
+  border-radius: 210px;
+  position: relative;
+}
+
+/* Style for the toggle thumb */
+.toggle-thumb {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  transition: transform 0.3s;
+}
+
+/* Style for the checked state */
+.toggle-container input[type="checkbox"]:checked + .toggle-track .toggle-thumb {
+  transform: translateX(17px);
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-track {
+  background-color: hsl(236, 72%, 79%);
+}
+
+.cardCon {
+  display: flex;
+  align-items: center;
+}
+
+.cardOne {
+  padding: 1.8rem;
+  text-align: center;
+  width: 300px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  filter: drop-shadow(0 0 2px hsl(234, 14%, 74%));
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(233, 13%, 49%);
+}
+
+.cardOne h4 {
+  color: hsl(233, 13%, 49%);
+}
+
+.priceCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px solid hsl(233, 13%, 49%);
+  color: hsl(232, 13%, 33%);
+}
+
+.priceConTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px solid hsl(240, 78%, 98%);
+}
+
+.borderLine {
+  border-bottom: 1px solid hsl(233, 13%, 49%);
+  padding: 0.8rem 0;
+}
+
+.borderLineTwo {
+  border-bottom: 1px solid hsl(240, 78%, 98%);
+  padding: 0.8rem 0;
+}
+
+.price {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.priceTwo {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+span {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.cardThree h4 {
+  color: hsl(233, 13%, 49%);
+}
+
+.cardTwo {
+  padding: 3rem 1.8rem;
+  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border-radius: 7px;
+  width: 300px;
+  color: hsl(240, 78%, 98%);
+}
+
+.cardThree {
+  padding: 1.8rem;
+  text-align: center;
+  width: 300px;
+  background-color: #ffffff;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  filter: drop-shadow(0 0 2px hsl(234, 14%, 74%));
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(233, 13%, 49%);
+}
+
+.btnOne {
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: hsl(240, 78%, 98%);
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.btnOne:hover {
+  color: hsl(237, 63%, 64%);
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid hsl(234, 14%, 74%);
+}
+
+.btnTwo {
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: hsl(237, 63%, 64%);
+  background-color: hsl(240, 78%, 98%);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.btnTwo:hover {
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: #ffffff;
+  cursor: pointer;
+  border: 1px solid hsl(234, 14%, 74%);
+}
